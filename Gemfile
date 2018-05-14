@@ -24,7 +24,7 @@ gem 'bootstrap', '~> 4.1.1'
 #gem 'webrick'
 gem 'devise'
 gem 'execjs'
-gem 'webpacker'
+gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -44,7 +44,6 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
-  gem 'webpacker'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
