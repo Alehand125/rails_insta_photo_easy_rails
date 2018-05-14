@@ -17,6 +17,7 @@
             <%= link_to "О проекте", pages_about_path,class: "nav-landing" %>
           </li>
           <li class="nav-link active">
+
             <% if user_signed_in?%>
               <%= link_to "Выйти",  destroy_user_session_path, method: :delete, class: "nav-landing" %>
             </li>
