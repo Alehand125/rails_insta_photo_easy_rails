@@ -34,8 +34,8 @@ gem 'execjs'
 gem 'bcrypt', platforms: :ruby
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-# gem 'yarn'
-# gem 'capistrano-npm'
+
+
 
 group :development do
   gem 'byebug', platform: :mri
