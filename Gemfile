@@ -19,6 +19,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.1.1'
 #gem 'webrick'
 gem 'devise'
+gem 'execjs'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
