@@ -10,7 +10,7 @@ end
 gem 'rails', '~> 5.0.1'
 gem 'puma', '~> 3.0'
 gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
+# gem 'uglifier', '>= 1.3.0'
 # gem 'uglifier', '~> 2.7', '>= 2.7.2'
 
 gem 'coffee-rails', '~> 4.2'
@@ -24,7 +24,7 @@ gem 'bootstrap', '~> 4.1.1'
 #gem 'webrick'
 gem 'devise'
 gem 'execjs'
-gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
+# gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -34,6 +34,8 @@ gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 gem 'bcrypt', platforms: :ruby
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# gem 'yarn'
+# gem 'capistrano-npm'
 
 group :development do
   gem 'byebug', platform: :mri
