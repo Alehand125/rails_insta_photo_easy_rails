@@ -9,12 +9,12 @@
   <body>
     <div class="container-fluid container-background">
       <div class="container">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <%= link_to "Главная",root_path %>
+        <ul class="nav">
+          <li class="nav-link active">
+            <%= link_to "Instaphoto",root_path, class: "nav-landing" %>
           </li>
-          <li class="nav-item">
-            <%= link_to "О нас", pages_about_path %>
+          <li class="nav-link active">
+            <%= link_to "О проекте", pages_about_path,class: "nav-landing" %>
           </li>
         </ul>
         <%= yield %>
