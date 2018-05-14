@@ -24,7 +24,7 @@ gem 'bootstrap', '~> 4.1.1'
 #gem 'webrick'
 gem 'devise'
 gem 'execjs'
-# gem 'webpacker'
+gem 'webpacker'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
