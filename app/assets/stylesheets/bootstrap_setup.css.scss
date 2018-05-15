@@ -1,56 +1,40 @@
-@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
 $display4-size: 2.5rem !default;
-$jumbotron-bg: rgba(255,255,255,0.3);
+$jumbotron-bg: rgba(255, 255, 255, 0.3);
 $navbar-border-radius: 0;
 
 @import "bootstrap";
 
 .container-background {
-  width:100%;
-  height:100vh;
+  width: 100%;
+  height: 100vh;
   background-size: cover;
-  background-image: url(image_path('background.jpg'))
-;
-
-$text-color : red;
-
-.title {
-color: $text-color;
+  background-image: url(image_path('background.jpg'));
 }
 
 .bg-transparent {
-  background-color:rgba(255,255,255,0);
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .landing-hello {
-color: blue;
+  color: blue;
 
 }
 
-.container-login{
-
-padding-right:0;
-padding-left:0;
-}
-
-
-.introduction{
-color:$text-color;
-}
-
-.main_part {
-color: $text-color;
+.container-login {
+  padding-right: 0;
+  padding-left: 0;
 }
 
 .landing-hello {
-color: $blue;
+  color: $blue;
 }
 
 .jumbotron-landing {
   width: 100%;
-  margin-left:auto; //автоматические отступы слева и справа.
-  margin-right:auto; //
+  margin-left: auto; //автоматические отступы слева и справа.
+  margin-right: auto; //
 }
 
 .nav-landing:link,
@@ -65,12 +49,29 @@ color: $blue;
   text-decoration: none; //удаляет подчеркивание кнопок при наведении
 }
 
-}
 
-.text-logo {
-	font-family: 'Gloria Hallelujah', cursive;
+.text-logo:hover,
+.text-logo:active {
+  font-family: 'Gloria Hallelujah', cursive;
+  color: rgba(99, 97, 232, 0.9);
+  text-decoration: none;
 }
 
 .landing-logo {
-   font-size:2rem;
-} 
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3rem;
+  color: rgba(99, 97, 232, 0.9);
+  text-decoration: none;
+}
+
+.nav-item {
+
+  text-decoration: none;
+
+}
+
+.nav-link {
+  color: #1b1e21;
+  text-decoration: none;
+  font-family: 'Gloria Hallelujah', cursive;
+}
