@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 $display4-size: 2.5rem !default;
 $jumbotron-bg: rgba(255,255,255,0.3);
 $navbar-border-radius: 0;
@@ -67,7 +68,7 @@ color: $blue;
 }
 
 .text-logo {
-  font-family: 'Gloria Hallelujah', cursive;
+	font-family: 'Gloria Hallelujah', cursive;
 }
 
 .landing-logo {
