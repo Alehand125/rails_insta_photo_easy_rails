@@ -17,7 +17,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'therubyracer', platforms: :ruby
 # gem 'therubyracer'
 gem 'jquery-rails'
-# gem 'turbolinks', '~> 5'
+gem 'turbolinks', '~> 5'
 # gem 'turbolinks'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.1.1'

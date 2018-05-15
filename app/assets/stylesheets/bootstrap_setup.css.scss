@@ -1,5 +1,7 @@
+@import url(https://fonts.googleapis.com/css?family=Gloria+Hallelujah);
 $display4-size: 2.5rem !default;
 $jumbotron-bg: rgba(255,255,255,0.3);
+$navbar-border-radius: 0;
 
 @import "bootstrap";
 
@@ -16,10 +18,21 @@ $text-color : red;
 color: $text-color;
 }
 
+.bg-transparent {
+  background-color:rgba(255,255,255,0);
+}
+
 .landing-hello {
 color: blue;
 
 }
+
+.container-login{
+
+padding-right:0;
+padding-left:0;
+}
+
 
 .introduction{
 color:$text-color;
@@ -52,3 +65,11 @@ color: $blue;
 }
 
 }
+
+.text-logo {
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.landing-logo {
+   font-size:2rem;
+} 

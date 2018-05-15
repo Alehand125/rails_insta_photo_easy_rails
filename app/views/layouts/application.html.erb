@@ -7,22 +7,17 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
-    <div class="container-fluid container-background">
-      <div class="container">
-        <ul class="nav">
-          <li class="nav-link active">
-            <%= link_to "Sashkaphoto",root_path, class: "nav-landing" %>
-          </li>
-          <li class="nav-link active">
-            <%= link_to "О проекте", pages_about_path,class: "nav-landing" %>
-          </li>
-          <li class="nav-link active">
+    
+    <% if user_signed_in? %>
 
-            <% if user_signed_in?%>
-              <%= link_to "Выйти",  destroy_user_session_path, method: :delete, class: "nav-landing" %>
-            </li>
-          <% end %>
-        </ul>
+    <div class="container-fluid container-login">
+
+      <% else %>
+    <div class="container-fluid container-background container-login">
+      <% end %>
+
+      <%= render "layouts/navigation" %>
+      <div class="container container-login">
         <p class="notice"><%= notice %></p>
         <p class="alert"><%= alert %></p>
         <%= yield %>
