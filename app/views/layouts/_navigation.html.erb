@@ -1,49 +1,82 @@
 <% if user_signed_in? %>
-  <nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!--<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #e3f2fd;">-->
+    <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+    <!--<span class="navbar-toggler-icon"></span>-->
+    <!--</button>-->
 
-  <!-- <div class="container"> -->
+    <!--&lt;!&ndash; <div class="container"> &ndash;&gt;-->
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <%= link_to "Sashkaphoto",root_path, class: "nav-link text-logo landing-logo" %>
-      
-      <ul class="navbar-nav float-right">
-        <li class="nav-item">
-        <%= link_to "О проекте", pages_about_path,class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Выйти",  destroy_user_session_path, method: :delete, class: "nav-link" %>
-        </li>
-      </ul>
-    </div>
-  </div>
-  </nav>
+    <!--<div class="collapse navbar-collapse" id="navbarNav">-->
+    <!--<%= link_to "Sashkaphoto", root_path, class: "nav-link text-logo landing-logo" %>-->
+    <!---->
+    <!--<ul class="navbar-nav float-right">-->
+    <!--<li class="nav-item">-->
+    <!--<%= link_to "О проекте", pages_about_path, class: "nav-link" %>-->
+    <!--</li>-->
+    <!--<li class="nav-item">-->
+    <!--<%= link_to "Выйти", destroy_user_session_path, method: :delete, class: "nav-link" %>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</nav>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="#">Hidden brand</a>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <%= link_to "Sashkaphoto", root_path, class: "nav-link text-logo landing-logo" %>
+          </li>
 
+          <li class="nav-item">
+            <%= link_to "Выйти", destroy_user_session_path, method: :delete, class: "nav-link" %>
+          </li>
+        </ul>
+              </div>
+    </nav>
 
 <% else %>
 
-<nav class="navbar navbar-expand-lg bg-transparent" style="background-color: #e3f2fd;">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!--<nav class="navbar navbar-expand-lg bg-transparent" style="background-color: #e3f2fd;">-->
+    <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+    <!--<span class="navbar-toggler-icon"></span>-->
+    <!--</button>-->
 
-  <div class="container">
+    <!--<div class="container">-->
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <%= link_to "Sashkaphoto",root_path, class: "nav-link text-logo landing-logo" %>
-      <ul class="navbar-nav float-right">
-        <li class="nav-item">
-        <%= link_to "О проекте", pages_about_path,class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Войти",  new_user_session_path, class: "nav-link float-right" %>
-        </li>
-      </ul>
-    </div>
-  </div>
-  </nav>
+    <!--<div class="collapse navbar-collapse" id="navbarNav">-->
+    <!--<%= link_to "Sashkaphoto", root_path, class: "nav-link text-logo landing-logo" %>-->
+    <!--<ul class="navbar-nav float-right">-->
+    <!--<li class="nav-item">-->
+    <!--<%= link_to "О проекте", pages_about_path, class: "nav-link" %>-->
+    <!--</li>-->
+    <!--<li class="nav-item">-->
+    <!--<%= link_to "Войти", new_user_session_path, class: "nav-link float-right" %>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</nav>-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <!--<a class="navbar-brand " href="#">Hidden brand</a>-->
+        <%= link_to "Sashkaphoto", root_path, class: "nav-link text-logo landing-logo" %>
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <%= link_to "О проекте", pages_about_path, class: "nav-link float-right" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Войти", new_user_session_path, class: "nav-link float-right" %>
+          </li>
+        </ul>
 
-  
+      </div>
+    </nav>
+
 <% end %>
