@@ -3,6 +3,8 @@
 $display4-size: 2.5rem !default;
 $jumbotron-bg: rgba(255, 255, 255, 0.3);
 $navbar-border-radius: 0;
+$card-cap-bg: rgba(255, 255, 255, 0.5) ;
+$card-bg:rgba(255, 255, 255, 0.3) ;
 
 @import "bootstrap";
 
@@ -11,6 +13,12 @@ $navbar-border-radius: 0;
   height: 100vh;
   background-size: cover;
   background-image: url(image_path('background.jpg'));
+}
+
+.devise-form{
+  width:50%;
+  margin-left: auto; //автоматические отступы слева и справа.
+  margin-right: auto;
 }
 
 .bg-transparent {
@@ -53,14 +61,14 @@ $navbar-border-radius: 0;
 .text-logo:hover,
 .text-logo:active {
   font-family: 'Gloria Hallelujah', cursive;
-  color: rgba(99, 97, 232, 0.9);
+  color: rgba(79, 131, 232, 0.9);
   text-decoration: none;
 }
 
 .landing-logo {
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 3rem;
-  color: rgba(99, 97, 232, 0.9);
+  color: rgba(79, 131, 232, 0.9);
   text-decoration: none;
 }
 
@@ -75,3 +83,4 @@ $navbar-border-radius: 0;
   text-decoration: none;
   font-family: 'Gloria Hallelujah', cursive;
 }
+
