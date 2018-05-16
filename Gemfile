@@ -5,10 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.3.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
-# gem 'puma'
+gem 'puma'
 gem 'sass-rails', '~> 5.0'
 # gem 'uglifier', '>= 1.3.0'
 # gem 'uglifier', '~> 2.7', '>= 2.7.2'
@@ -21,7 +22,6 @@ gem 'jquery-rails'
 
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.1.1'
-# gem 'webrick'
 gem 'devise'
 # gem 'execjs'
 # gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
@@ -34,6 +34,7 @@ gem 'devise'
 gem 'bcrypt', platforms: :ruby
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+# gem 'mongrel'
 
 
 group :development do
