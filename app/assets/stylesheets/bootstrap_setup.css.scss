@@ -34,7 +34,7 @@ $card-bg: rgba(255, 255, 255, 0.3);
   color: $blue;
 }
 
-.photo-form{
+.photo-form {
   width: 50%;
   margin-left: auto; //автоматические отступы слева и справа.
   margin-right: auto;
@@ -51,12 +51,12 @@ $card-bg: rgba(255, 255, 255, 0.3);
   color: #3498DB; //цвет кнопок в неактивном состоянии
 }
 
-.nav-landing:hover,
-.nav-landing:active {
-  // color: #59ABF3;
-  color: red; // цвет кнопки при наведении
-  text-decoration: none; //удаляет подчеркивание кнопок при наведении
-}
+//.nav-landing:hover,
+//.nav-landing:active {
+//  // color: #59ABF3;
+//  color: red; // цвет кнопки при наведении
+//  text-decoration: none; //удаляет подчеркивание кнопок при наведении
+//}
 
 .text-logo:hover,
 .text-logo:active {
