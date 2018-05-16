@@ -17,12 +17,12 @@
 
           <li class="nav-item active">
             <!--<%= link_to "О проекте", pages_about_path, class: "nav-link nav-item" %>-->
-            <%= link_to current_user.email, edit_user_registration_path, class: "nav-link" %>
+            <%= link_to current_user.email, edit_user_registration_path, class: "text-button" %>
 
           </li>
 
           <li class="nav-item">
-            <%= link_to "Выйти", destroy_user_session_path, method: :delete, class: "nav-link float-right" %>
+            <%= link_to "Выйти", destroy_user_session_path, method: :delete, class: "text-button" %>
           </li>
 
         </ul>
@@ -47,11 +47,11 @@
           </li>
 
           <li class="nav-item active">
-            <%= link_to "О проекте", pages_about_path, class: "nav-link float-right" %>
+            <%= link_to "О проекте", pages_about_path, class: "text-button " %>
           </li>
 
           <li class="nav-item">
-            <%= link_to "Войти", new_user_session_path, class: "nav-link float-right" %>
+            <%= link_to "Войти", new_user_session_path, class: "text-button" %>
           </li>
 
         </ul>

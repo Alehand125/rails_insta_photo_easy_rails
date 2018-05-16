@@ -3,8 +3,8 @@
 $display4-size: 2.5rem !default;
 $jumbotron-bg: rgba(255, 255, 255, 0.3);
 $navbar-border-radius: 0;
-$card-cap-bg: rgba(255, 255, 255, 0.5) ;
-$card-bg:rgba(255, 255, 255, 0.3) ;
+$card-cap-bg: rgba(255, 255, 255, 0.5);
+$card-bg: rgba(255, 255, 255, 0.3);
 
 @import "bootstrap";
 
@@ -15,8 +15,8 @@ $card-bg:rgba(255, 255, 255, 0.3) ;
   background-image: url(image_path('background.jpg'));
 }
 
-.devise-form{
-  width:50%;
+.devise-form {
+  width: 50%;
   margin-left: auto; //автоматические отступы слева и справа.
   margin-right: auto;
 }
@@ -52,7 +52,6 @@ $card-bg:rgba(255, 255, 255, 0.3) ;
   text-decoration: none; //удаляет подчеркивание кнопок при наведении
 }
 
-
 .text-logo:hover,
 .text-logo:active {
   font-family: 'Gloria Hallelujah', cursive;
@@ -70,13 +69,17 @@ $card-bg:rgba(255, 255, 255, 0.3) ;
 .nav-item {
 
   text-decoration: none;
-  field-right:true;
+  field-right: true;
 
 }
 
 .nav-link {
-  color: #1b1e21;
+  color: #4f83e8;
   text-decoration: none;
   font-family: 'Gloria Hallelujah', cursive;
 }
 
+.text-button {
+  color: #4f83e8;
+  field-right: true;
+}
