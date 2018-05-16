@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sashkaphoto</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-  <body>
-    
-    <% if user_signed_in? %>
+<head>
+  <title>Sashkaphoto</title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+
+<% if user_signed_in? %>
 
     <div class="container-fluid container-login">
 
-      <% else %>
+<% else %>
     <div class="container-fluid container-background container-login">
-      <% end %>
+<% end %>
 
-      <%= render "layouts/navigation" %>
-      <div class="container container-login">
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
-        <%= yield %>
-      </div>
-    </div>
-  </body>
+<%= render "layouts/navigation" %>
+<div class="container container-login">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <%= yield %>
+</div>
+</div>
+</div>
+</body>
 </html>
