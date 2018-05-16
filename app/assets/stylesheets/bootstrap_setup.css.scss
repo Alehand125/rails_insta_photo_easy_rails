@@ -34,6 +34,12 @@ $card-bg: rgba(255, 255, 255, 0.3);
   color: $blue;
 }
 
+.photo-form{
+  width: 50%;
+  margin-left: auto; //автоматические отступы слева и справа.
+  margin-right: auto;
+}
+
 .jumbotron-landing {
   width: 100%;
   margin-left: auto; //автоматические отступы слева и справа.
@@ -69,7 +75,7 @@ $card-bg: rgba(255, 255, 255, 0.3);
 .nav-item {
 
   text-decoration: none;
-  field-right: true;
+  //field-right: true;
 
 }
 

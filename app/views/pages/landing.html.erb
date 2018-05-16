@@ -1,10 +1,13 @@
 <% if user_signed_in? %>
+
 <% else %>
-  <div class="jumbotron jumbotron-landing">
+    <div class="jumbotron jumbotron-landing">
+    <!--<p class="jumbotron jumbotron-landing">-->
     <h1 class="display-4 landing-hello">Делитесь своими iZюмительными фото с друзьями</h1>
     <p class="lead">Размещайте свои фотографии и подписывайтесь на публикации своих друзей.</p>
     <hr class="my-4">
     <%= link_to "Создать аккаунт", new_user_registration_path, class: "btn btn-secondary btn-outline-primary" %>
     <%= link_to "Войти", new_user_session_path, class: "btn btn-primary" %>
-  </div>
+    </p>
+    </div>
 <% end %>

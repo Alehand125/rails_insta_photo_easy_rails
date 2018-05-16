@@ -1,27 +1,27 @@
-<p id="notice"><%= notice %></p>
+<div class="jumbotron ">
+  <h1>Photos</h1>
 
-<h1>Photos</h1>
-
-<table>
-  <thead>
+  <table>
+    <thead>
     <tr>
       <th>Description</th>
       <th colspan="3"></th>
     </tr>
-  </thead>
+    </thead>
 
-  <tbody>
+    <tbody>
     <% @photos.each do |photo| %>
-      <tr>
-        <td><%= photo.description %></td>
-        <td><%= link_to 'Показать', photo %></td>
-        <td><%= link_to 'Редактировать', edit_photo_path(photo) %></td>
-        <td><%= link_to 'Удалить', photo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <tr>
+          <td><%= photo.description %></td>
+          <td><%= link_to 'Показать', photo %></td>
+          <td><%= link_to 'Редактировать', edit_photo_path(photo) %></td>
+          <td><%= link_to 'Удалить', photo, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+        </tr>
     <% end %>
-  </tbody>
-</table>
+    </tbody>
+  </table>
 
-<br>
+  <br>
 
-<%= link_to 'New Photo', new_photo_path %>
+  <%= link_to 'Новое фото', new_photo_path, class: "btn btn-primary" %>
+</div>
