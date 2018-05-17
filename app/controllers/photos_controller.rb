@@ -12,7 +12,7 @@ class PhotosController < ApplicationController
 
 
   def new
-    @photo = Photo.new
+    @photo = current_user.photos.build
   end
 
 
@@ -20,7 +20,7 @@ class PhotosController < ApplicationController
   end
 
   def create
-    @photo = Photo.new(photo_params)
+    @photo = current_user.photos.build(photo_params)
 
     if @photo.save
       redirect_to @photo, notice: 'Успешно создано'
@@ -45,6 +45,13 @@ class PhotosController < ApplicationController
   end
 
   private
+
+  def owner
+    @photo = current_user.photos.find_by(id: params[:id])
+    redirect_to photos_path, notice: "У вас нет разрешения на изщменение этой фото"
+    if @photo.nil?
+      end
+  end
 
   def set_photo
     @photo = Photo.find(params[:id])
