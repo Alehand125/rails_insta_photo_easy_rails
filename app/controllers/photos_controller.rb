@@ -1,6 +1,7 @@
 class PhotosController < ApplicationController
   before_action :set_photo, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_user!, except: [:index, :show] #чтобы фотки мог создавать только зареганный юзер
+  before_action :owner, only: [:edit, :update, :destroy]
 
   def index
     @photos = Photo.all
@@ -48,9 +49,7 @@ class PhotosController < ApplicationController
 
   def owner
     @photo = current_user.photos.find_by(id: params[:id])
-    redirect_to photos_path, notice: "У вас нет разрешения на изщменение этой фото"
-    if @photo.nil?
-      end
+    redirect_to photos_path, notice: "У вас нет разрешений на изменение этой фото" if @photo.nil?
   end
 
   def set_photo
