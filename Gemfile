@@ -37,6 +37,7 @@ gem 'bcrypt', platforms: :ruby
 # gem 'mongrel'
 gem "paperclip", "~> 5.0.0"
 
+
 group :development do
   gem 'byebug', platform: :mri
   gem 'sqlite3'
