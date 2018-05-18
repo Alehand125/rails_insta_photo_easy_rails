@@ -1,34 +1,21 @@
-<div class="jumbotron ">
-  <h1>Photos</h1>
+<div class="jumbotron">
+  <% @photos.each do |photo| %>
+      <%= image_tag photo.image.url(:medium) %>
+      <%= photo.description %>
+      <%= photo.user.email if photo.user %>
+      <%= link_to 'Show', photo %>
 
-  <table>
-    <thead>
-    <tr>
-      <th>Description</th>
-      <th>User_email</th>
-      <th colspan="3"></th>
-    </tr>
-    </thead>
+      <% if photo.user == current_user %>
+          <%= link_to 'Edit', edit_photo_path(photo) %>
+          <%= link_to 'Destroy', photo, method: :delete, data: {confirm: 'Are you sure?'} %>
+      <% end %>
+<%end%>
 
-    <tbody>
-    <% @photos.each do |photo| %>
-        <tr>
-          <td><%= photo.description %></td>
-          <td><%= photo.user.email if photo.user %></td>
-          <td><%= link_to 'Показать', photo %></td>
-          <td>
-            <% if photo.user == current_user %>
-                <%= link_to 'Редактировать', edit_photo_path(photo) %>
-            <% end %></td>
-          <% if photo.user == current_user %>
-              <td><%= link_to 'Удалить', photo, method: :delete, data: {confirm: 'Вы уверены?'} %>
-          <% end %></td>
-        </tr>
-    <% end %>
-    </tbody>
-  </table>
-  <br>
-  <% if user_signed_in? %>
-      <%= link_to 'Залить новое фото', new_photo_path, class: "btn btn-primary" %>
-  <% end %>
+      <br>
+
+      <% if user_signed_in? %>
+          <%= link_to 'New Photo', new_photo_path, class: "btn btn-primary" %>
+      <% end %>
+
+
 </div>

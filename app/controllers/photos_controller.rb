@@ -42,7 +42,6 @@ class PhotosController < ApplicationController
   def destroy
     @photo.destroy
     redirect_to photos_url, notice: 'Успешно удалено.'
-
   end
 
   private
@@ -56,9 +55,9 @@ class PhotosController < ApplicationController
     @photo = Photo.find(params[:id])
   end
 
-# Never trust parameters from the scary internet, only allow the white list through.
+
   def photo_params
-    params.require(:photo).permit(:description)
+    params.require(:photo).permit(:description, :image)
   end
 
 end
