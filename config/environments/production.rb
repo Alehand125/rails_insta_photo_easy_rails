@@ -74,7 +74,7 @@ Rails.application.configure do
   config.active_support.deprecation = :notify
 
   # use default logging formatter so that pid and timestamp are not suppressed.
-  config.log_formatter = ::logger::formatter.new
+  config.log_formatter = ::Logger::formatter.new
 
   # use a different logger for distributed setups.
   # require 'syslog/logger'
