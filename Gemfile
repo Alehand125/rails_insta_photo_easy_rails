@@ -36,6 +36,7 @@ gem 'bcrypt', platforms: :ruby
 # gem 'capistrano-rails', group: :development
 # gem 'mongrel'
 gem "paperclip", "~> 5.0.0"
+gem 'aws-sdk','~>2.5'
 
 
 group :development do
