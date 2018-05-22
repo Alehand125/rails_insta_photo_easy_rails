@@ -5,10 +5,11 @@ $jumbotron-bg: rgba(255, 255, 255, 0.3);
 $navbar-border-radius: 0;
 $card-cap-bg: rgba(255, 255, 255, 0.5);
 $card-bg: rgba(255, 255, 255, 0.3);
+$body-bg: #ECF0F1;
 
 @import "bootstrap";
 
-.container-background {
+.container-backg round {
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -26,6 +27,7 @@ $card-bg: rgba(255, 255, 255, 0.3);
 }
 
 .container-login {
+  text-align: center;
   padding-right: 0;
   padding-left: 0;
 }
@@ -35,9 +37,11 @@ $card-bg: rgba(255, 255, 255, 0.3);
 }
 
 .photo-form {
-  width: 50%;
+  //width: 50%;
+  display: inline-block;
   margin-left: auto; //автоматические отступы слева и справа.
   margin-right: auto;
+  text-align: left;
 }
 
 .jumbotron-landing {
@@ -51,10 +55,10 @@ $card-bg: rgba(255, 255, 255, 0.3);
   color: #db1f2e; //цвет кнопок в неактивном состоянии
 }
 
-.bg-grey {
-  background-color: #ECF0F1;
-  height: 100vh;
-}
+//.bg-grey {
+//  background-color: #ECF0F1;
+//  height: 100vh;
+//}
 
 .text-logo:hover,
 .text-logo:active {

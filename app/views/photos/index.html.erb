@@ -1,23 +1,26 @@
-<div class="jumbotron ">
+<% @photos.each do |photo| %>
+    <div class="card photo-form">
+      <div class="card-body">
 
-  <% @photos.each do |photo| %>
-      <!--<%= image_tag photo.image.url %>-->
-      <%= image_tag photo.image.url(:thumb) %>
+        <%= image_tag photo.image.url(:medium) %> <br>
 
-      <%= photo.description %></td>
-      <%= photo.user.email if photo.user %>
-      <%= link_to 'Показать', photo %>
+        <strong><%= photo.description %></td> </strong><br>
+        <%= photo.user.email if photo.user %><br>
+        <%= link_to 'Показать', photo %>
 
-      <% if photo.user == current_user %>
-          <%= link_to 'Редактировать', edit_photo_path(photo) %>
-          <%= link_to 'Удалить', photo, method: :delete, data: {confirm: 'Вы уверены?'} %>
-      <% end %>
-  <% end %>
+        <% if photo.user == current_user %>
+            | <%= link_to 'Редактировать', edit_photo_path(photo) %>
+            | <%= link_to 'Удалить', photo, method: :delete, data: {confirm: 'Вы уверены?'} %>
+        <% end %>
+      </div>
+    </div>
+
+<% end %>
 
 
 
-  <br>
-  <% if user_signed_in? %>
-      <%= link_to 'Залить новое фото', new_photo_path, class: "btn btn-primary" %>
-  <% end %>
+<br>
+<% if user_signed_in? %>
+    <%= link_to 'Залить новое фото', new_photo_path, class: "btn btn-primary" %>
+<% end %>
 </div>

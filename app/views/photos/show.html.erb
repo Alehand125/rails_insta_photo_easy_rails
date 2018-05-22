@@ -2,16 +2,17 @@
   <div class="card-body">
 
     <p>
-      <%= image_tag @photo.image.url %>
-      <strong>Description:</strong>
-      <%= @photo.description %> <br>
+      <%= image_tag @photo.image.url(:large)  %> <br>
+      <strong><%= @photo.description %> </strong><br>
 
-      <strong>User email:</strong>
+
+
       <%= @photo.user.email if @photo.user %>
 
     </p>
     <% if @photo.user == current_user %>
         <%= link_to 'Редактировать', edit_photo_path(@photo) %> |
+        <%= link_to 'Удалить', @photo, method: :delete, data: {confirm: 'Вы уверены?'}  %> |
     <% end %>
     <%= link_to 'Назад ', photos_path %>
 
