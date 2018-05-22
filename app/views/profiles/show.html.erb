@@ -1,11 +1,16 @@
-<% @photos.each do |photo| %>
+<%= @user.id %>
+<%= @user.email %>
+
+<br>
+
+<% @user.photos.each do |photo| %>
     <div class="card photo-form">
       <div class="card-body">
 
         <%= image_tag photo.image.url(:medium) %> <br>
 
         <strong><%= photo.description %></td> </strong><br>
-        <%= link_to photo.user.email, profile_path(photo.user_id) if photo.user %><br>
+
         <%= link_to 'Показать', photo %>
 
         <% if photo.user == current_user %>
@@ -16,11 +21,3 @@
     </div>
 
 <% end %>
-
-
-
-<br>
-<% if user_signed_in? %>
-    <%= link_to 'Залить новое фото', new_photo_path, class: "btn btn-primary" %>
-<% end %>
-</div>
