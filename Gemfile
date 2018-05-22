@@ -8,8 +8,9 @@ end
 ruby '2.3.3'
 # ruby '2.5.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.1'
-# gem 'rails', '~> 5.2.0'
+# gem 'rails', '~> 5.0.1'
+# gem 'rails', '~> 5.1.0'
+gem 'rails', '~> 5.2.0'
 
 
 gem 'puma'
@@ -26,6 +27,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.1.1'
 gem 'devise'
+gem 'bootsnap'
 # gem 'execjs'
 # gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 
