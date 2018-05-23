@@ -5,7 +5,7 @@ $jumbotron-bg: rgba(255, 255, 255, 0.3);
 $navbar-border-radius: 0;
 $card-cap-bg: rgba(255, 255, 255, 0.5);
 $card-bg: rgba(255, 255, 255, 0.3);
-$body-bg: #ECF0F1;
+$body-bg: #ECF0F2;
 
 @import "bootstrap";
 
@@ -23,8 +23,9 @@ $body-bg: #ECF0F1;
 }
 
 .bg-transparent {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(25, 255, 255, 1);
 }
+
 
 .container-login {
   text-align: center;
@@ -32,9 +33,9 @@ $body-bg: #ECF0F1;
   padding-left: 0;
 }
 
-.landing-hello {
-  color: $blue;
-}
+// .landing-hello {
+//   color: $blue;
+// }
 
 .photo-form {
   //width: 50%;
@@ -50,20 +51,20 @@ $body-bg: #ECF0F1;
   margin-right: auto; //
 }
 
-.nav-landing:link,
-.nav-landing:visited {
-  color: #db1f2e; //цвет кнопок в неактивном состоянии
-}
+// .nav-landing:link,
+// .nav-landing:visited {
+//   color: #db1f2e; //цвет кнопок в неактивном состоянии
+// }
 
-//.bg-grey {
-//  background-color: #ECF0F1;
-//  height: 100vh;
-//}
+.bg-grey {
+ background-color: #ECF0F1;
+ height: 100vh;
+}
 
 .text-logo:hover,
 .text-logo:active {
   font-family: 'Aguafina Script';
-  color: rgba(79, 131, 232, 0.9);
+  color: rgba(79, 131, 232, 0.2);
   text-decoration: none;
 }
 
