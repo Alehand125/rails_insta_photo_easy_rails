@@ -7,6 +7,7 @@ $card-cap-bg: rgba(255, 255, 255, 0.5);
 $card-bg: rgba(255, 255, 255, 0.3);
 $body-bg: #ECF0F2;
 
+
 @import "bootstrap";
 
 .container-background {
@@ -15,6 +16,15 @@ $body-bg: #ECF0F2;
   background-size: cover;
   background-image: url(image_path('background.jpg'));
 }
+
+.card-body {
+  // Enable `flex-grow: 1` for decks and groups so that card blocks take up
+  // as much space as possible, ensuring footers are aligned to the bottom.
+  flex: 1 1 auto;
+  padding: $card-spacer-x;
+  flex-grow: 1;
+}
+
 
 .devise-form {
   width: 30%;
@@ -38,7 +48,7 @@ $body-bg: #ECF0F2;
 // }
 
 .photo-form {
-  //width: 50%;
+  width: 50%;
   display: inline-block;
   margin-left: auto; //автоматические отступы слева и справа.
   margin-right: auto;
@@ -51,15 +61,11 @@ $body-bg: #ECF0F2;
   margin-right: auto; //
 }
 
-// .nav-landing:link,
-// .nav-landing:visited {
-//   color: #db1f2e; //цвет кнопок в неактивном состоянии
-// }
 
-.bg-grey {
- background-color: #ECF0F1;
- height: 100vh;
-}
+// .bg-grey {
+//  background-color: #ECF0F1;
+//  height: 100vh;
+// }
 
 .text-logo:hover,
 .text-logo:active {

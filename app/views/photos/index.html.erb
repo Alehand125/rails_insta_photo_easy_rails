@@ -1,26 +1,34 @@
-<% @photos.each do |photo| %>
-<div class="card photo-form ">
-    <div class="card-body">
-        
-        <%= image_tag photo.image.url(:medium) %> <br>
-        
-    <strong><%= photo.description %></td> </strong><br>
-    <%= link_to photo.user.email, profile_path(photo.user_id) if photo.user %><br>
-    <%= link_to 'Показать', photo %>
-    
-    <% if photo.user == current_user %>
-    | <%= link_to 'Редактировать', edit_photo_path(photo) %>
-    | <%= link_to 'Удалить', photo, method: :delete, data: {confirm: 'Вы уверены?'} %>
-    <% end %>
-</div>
-</div>
 
-<% end %>
-
-
-
-<br>
 <% if user_signed_in? %>
 <%= link_to 'Залить новое фото', new_photo_path, class: "btn btn-primary" %>
 <% end %>
+<br>
+
+<% @photos.each do |photo| %>
+<div class="card photo-form ">
+  <div class="card-body">
+     <%= image_tag photo.image.url(:medium) %> 
+    
+     <strong><%= photo.description %> </strong><br>
+      <%= link_to photo.user.email, profile_path(photo.user_id) if photo.user %><br>
+      <%= link_to 'Показать', photo %>
+  
+      <% if photo.user == current_user %>
+      | <%= link_to 'Редактировать', edit_photo_path(photo) %>
+      | <%= link_to 'Удалить', photo, method: :delete, data: {confirm: 'Вы уверены?'} %>
+      </div>
+
+       <% end %>
+
 </div>
+
+  
+<% end %>
+
+
+<%= will_paginate @photos %>
+
+
+
+
+

@@ -11,7 +11,7 @@ ruby '2.3.3'
 # gem 'rails', '~> 5.0.1'
 # gem 'rails', '~> 5.1.0'
 gem 'rails', '~> 5.2.0'
-
+gem 'will_paginate', '~> 3.1.0'
 
 gem 'puma'
 gem 'sass-rails', '~> 5.0'
@@ -42,6 +42,7 @@ gem 'bcrypt', platforms: :ruby
 # gem 'mongrel'
 gem "paperclip", "~> 5.0.0"
 gem 'aws-sdk','~>2.5'
+gem 'will_paginate-bootstrap'
 
 
 group :development do
